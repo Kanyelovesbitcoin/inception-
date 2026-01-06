@@ -4,11 +4,11 @@ import {
   Text,
   TextInput,
   StyleSheet,
-  SafeAreaView,
   KeyboardAvoidingView,
   Platform,
   ScrollView,
 } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { Header, ProgressIndicator, Button } from '../components';
 import { useWizard } from '../context/WizardContext';
