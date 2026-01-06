@@ -52,14 +52,12 @@ export function ExpertiseScreen({ navigation }: Props) {
             </Text>
 
             <TextInput
-              style={styles.input}
+              style={[styles.input, Platform.OS === 'android' && { textAlignVertical: 'top' }]}
               placeholder="e.g. Restaurant operations — I've worked in kitchens for 5 years and know the chaos..."
               placeholderTextColor="#666666"
               value={data.expertise}
               onChangeText={setExpertise}
               multiline
-              numberOfLines={4}
-              textAlignVertical="top"
             />
           </View>
 
@@ -101,7 +99,6 @@ const styles = StyleSheet.create({
     fontWeight: '600',
     color: '#FFFFFF',
     marginBottom: 12,
-    fontFamily: Platform.OS === 'ios' ? 'Menlo' : 'monospace',
   },
   description: {
     fontSize: 14,

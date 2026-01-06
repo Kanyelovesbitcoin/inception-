@@ -54,14 +54,12 @@ export function TechLeverageScreen({ navigation }: Props) {
             </Text>
 
             <TextInput
-              style={styles.input}
+              style={[styles.input, Platform.OS === 'android' && { textAlignVertical: 'top' }]}
               placeholder="e.g. AI, workflow automation, mobile apps..."
               placeholderTextColor="#666666"
               value={data.techLeverage}
               onChangeText={setTechLeverage}
               multiline
-              numberOfLines={4}
-              textAlignVertical="top"
             />
           </View>
 
@@ -109,7 +107,6 @@ const styles = StyleSheet.create({
     fontWeight: '600',
     color: '#FFFFFF',
     marginBottom: 12,
-    fontFamily: Platform.OS === 'ios' ? 'Menlo' : 'monospace',
   },
   description: {
     fontSize: 14,
