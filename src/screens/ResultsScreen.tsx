@@ -176,7 +176,6 @@ const styles = StyleSheet.create({
   },
   actionButtons: {
     flexDirection: 'row',
-    gap: 16,
     width: '100%',
   },
   actionButton: {
@@ -187,6 +186,7 @@ const styles = StyleSheet.create({
     borderRadius: 8,
     padding: 20,
     alignItems: 'center',
+    marginHorizontal: 8,
   },
   actionIcon: {
     fontSize: 24,

@@ -24,8 +24,6 @@ export default function App() {
             initialRouteName="Expertise"
             screenOptions={{
               headerShown: false,
-              contentStyle: { backgroundColor: '#000000' },
-              animation: 'slide_from_right',
             }}
           >
             <Stack.Screen name="Expertise" component={ExpertiseScreen} />

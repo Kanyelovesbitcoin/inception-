@@ -27,13 +27,13 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
-    gap: 12,
     marginVertical: 24,
   },
   dot: {
     width: 48,
     height: 4,
     borderRadius: 2,
+    marginHorizontal: 6,
   },
   activeDot: {
     backgroundColor: '#FFFFFF',
